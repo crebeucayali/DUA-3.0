@@ -1,5 +1,5 @@
 "use strict";
-// Síntesis y ejemplos originales de NeuroNova Apps, fundamentados en CAST (2024).
+// Síntesis y ejemplos originales de NeuroNova Apps, fundamentados en CAST (2024); adaptación institucional para CREBE Ucayali.
 // Índices por numeración oficial DUA 3.0.
 window.DUA_DETAILS={
 guidelines:{
