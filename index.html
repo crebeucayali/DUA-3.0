@@ -738,7 +738,7 @@ function contentToCopy(){
   sections.push(document.getElementById("detail-explanation").textContent.trim());
  }
  sections.push("Ejemplo de aplicación educativa",document.getElementById("detail-example").textContent.trim());
- sections.push("Fuente conceptual: CAST (2024), Directrices DUA 3.0. Explicaciones, orientaciones y ejemplos educativos: adaptación institucional CREBE "Señor de los Milagros" - Ucayali; autoría original y licencias en ATTRIBUTION.md.");
+ sections.push("Fuente conceptual: CAST (2024), Directrices DUA 3.0. Explicaciones, orientaciones y ejemplos educativos: adaptación institucional del CREBE Señor de los Milagros - Ucayali; autoría original y licencias en ATTRIBUTION.md.");
  sections.push("Enlace del apartado: "+detailURL(activeDetail));
  return sections.filter(Boolean).join("\n\n");
 }
@@ -806,7 +806,7 @@ function buildPrintDetail(){
  }
  add("h2","Ejemplo de aplicación educativa");
  add("p",document.getElementById("detail-example").textContent);
- add("p","Fuente conceptual: CAST (2024), Directrices DUA 3.0. Explicaciones, orientaciones y ejemplos educativos: adaptación institucional CREBE "Señor de los Milagros" - Ucayali; autoría original y licencias en ATTRIBUTION.md.","print-source");
+ add("p","Fuente conceptual: CAST (2024), Directrices DUA 3.0. Explicaciones, orientaciones y ejemplos educativos: adaptación institucional del CREBE Señor de los Milagros - Ucayali; autoría original y licencias en ATTRIBUTION.md.","print-source");
  add("p","Enlace del apartado: "+detailURL(activeDetail));
  return true;
 }
