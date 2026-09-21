@@ -2,7 +2,7 @@
 
 ## Fundamento conceptual
 
-Esta plataforma educativa de NeuroNova Apps toma como referencia las *CAST Universal Design for Learning Guidelines*, versión 3.0, elaboradas por CAST y publicadas en 2024.
+Esta versión institucional del CREBE "Señor de los Milagros" - Ucayali adapta una plataforma educativa original de NeuroNova Apps que toma como referencia las *CAST Universal Design for Learning Guidelines*, versión 3.0, elaboradas por CAST y publicadas en 2024.
 
 Los textos explicativos, estrategias pedagógicas, ejemplos y casos prácticos creados específicamente por NeuroNova Apps son recursos propios. Los contenidos originales de CAST y cualquier otro tercero conservan sus derechos y condiciones de uso. La licencia de los materiales propios no se extiende a dichos materiales.
 
