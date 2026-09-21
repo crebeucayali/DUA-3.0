@@ -363,11 +363,15 @@ const searchRecords=[];
 const levelMap={access:[7,1,4],support:[8,2,5],executive:[9,3,6]};
 const principleNames={engagement:"Compromiso",representation:"Representación",action:"Acción y expresión"};
 let activePrinciple="all";
-const readStorageKey="neuronova-dua-3-read-v1";
+const readStorageKey="crebeucayali-dua-3-read-v1";
+const legacyReadStorageKey="neuronova-dua-3-read-v1";
 let readIds=new Set();
 try{
- const saved=JSON.parse(localStorage.getItem(readStorageKey)||"[]");
+ const current=localStorage.getItem(readStorageKey);
+ // Se usa la clave anterior solo si esta versión todavía no guardó progreso propio.
+ const saved=JSON.parse(current===null?(localStorage.getItem(legacyReadStorageKey)||"[]"):current);
  if(Array.isArray(saved))readIds=new Set(saved.filter(id=>typeof id==="string"));
+ if(current===null)localStorage.setItem(readStorageKey,JSON.stringify([...readIds]));
 }catch(_error){/* La lectura continúa aun si el navegador bloquea el almacenamiento. */}
 function markRead(id){
  if(!expandedOrder.includes(id))return;
