@@ -6,6 +6,10 @@ Esta versión institucional del CREBE "Señor de los Milagros" - Ucayali adapta 
 
 Los textos explicativos, estrategias pedagógicas, ejemplos y casos prácticos creados específicamente por NeuroNova Apps son recursos propios. Los contenidos originales de CAST y cualquier otro tercero conservan sus derechos y condiciones de uso. La licencia de los materiales propios no se extiende a dichos materiales.
 
+## Adaptación institucional
+
+La versión publicada en el repositorio crebeucayali/DUA-3.0 incorpora la identidad visual y la presentación institucional del CREBE "Señor de los Milagros" - Ucayali, con ajustes de navegación, documentación y metadatos. Se conserva la atribución de los materiales originales de NeuroNova Apps. Las condiciones se detallan en [la licencia de código](LICENSE) y [la licencia de contenidos](CONTENT-LICENSE.md).
+
 Este proyecto es independiente: no es una publicación oficial de CAST y no implica patrocinio, asociación ni respaldo de esa organización.
 
 **Referencia bibliográfica (APA 7):**
