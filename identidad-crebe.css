@@ -38,3 +38,28 @@ footer a:hover,footer a:focus-visible{color:#fff}
  .crebe-identity-name small{font-size:.72rem}
  .crebe-identity-links a{padding:8px 13px}
 }
+
+/* Pie institucional de DUA 3.0: adaptación del formato EVA.
+   Las reglas se limitan al footer y no afectan los recursos ni las tarjetas. */
+footer.crebe-footer{margin-top:28px;background:#1d354b;color:#fff;font-size:.91rem;line-height:1.6}
+.crebe-footer .crebe-footer-inner{width:min(100% - 40px,1200px);margin:auto;padding:35px 0 25px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(150px,.8fr) minmax(210px,1fr);gap:23px 30px;align-items:start}
+.crebe-footer .crebe-footer-identity{display:flex;align-items:flex-start;gap:15px}
+.crebe-footer .crebe-footer-logo{width:54px;height:54px;flex:0 0 54px;display:block;object-fit:contain;background:#fff;border-radius:12px;padding:5px}
+.crebe-footer .crebe-footer-identity strong{display:block;color:#fff;font-size:1rem;line-height:1.35}
+.crebe-footer .crebe-footer-identity p{margin:8px 0 0;color:#eff6f8}
+.crebe-footer .crebe-footer-heading{display:block;font-size:.94rem;font-weight:750;margin:0 0 10px;color:#fff}
+.crebe-footer .crebe-footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.crebe-footer .crebe-footer-links a,.crebe-footer .crebe-footer-contact a,.crebe-footer .crebe-footer-bottom a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.crebe-footer .crebe-footer-links a:hover,.crebe-footer .crebe-footer-contact a:hover,.crebe-footer .crebe-footer-bottom a:hover{text-decoration-thickness:2px}
+.crebe-footer .crebe-footer-contact p{margin:0 0 3px;color:#fff;overflow-wrap:anywhere}
+.crebe-footer .crebe-footer-bottom{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.25);padding-top:16px;margin-top:1px}
+.crebe-footer .crebe-footer-bottom p{margin:0 0 6px;color:#f1f6f9;font-size:.86rem;overflow-wrap:anywhere}
+@media(max-width:1050px){
+ .crebe-footer .crebe-footer-inner{grid-template-columns:1fr;gap:23px;padding-top:32px}
+ .crebe-footer .crebe-footer-bottom{grid-column:1}
+}
+@media(max-width:500px){
+ .crebe-footer .crebe-footer-inner{width:calc(100% - 30px);gap:20px}
+ .crebe-footer .crebe-footer-logo{width:47px;height:47px;flex-basis:47px}
+ .crebe-footer .crebe-footer-identity{gap:12px}
+}
