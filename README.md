@@ -3,14 +3,20 @@ Repositorio institucional del CREBE "Señor de los Milagros" - Ucayali con recur
 
 Esta versión adapta el proyecto educativo original de NeuroNova Apps. La autoría de los materiales y sus condiciones de uso se mantienen documentadas en los archivos de atribución y licencia.
 
+## Adaptación institucional
+
+La publicación de CREBE Ucayali conserva la atribución al proyecto original de NeuroNova Apps y la referencia conceptual a CAST (2024). La versión institucional reúne el explorador, la evolución de las directrices y el centro de recursos bajo la identidad visual del CREBE.
+
 ## Sitio web
 
-[Visitar DUA 3.0 del CREBE SEÑOR DE LOS MILAGROS](https://crebeucayali.github.io/DUA-3.0/).
+[Visitar DUA 3.0 del CREBE "Señor de los Milagros" - Ucayali](https://crebeucayali.github.io/DUA-3.0/).
+
+[Portal principal](https://crebeucayali.github.io/) · [Accesos complementarios](https://crebeucayali.github.io/accesos-complementarios/) · [Evolución](https://crebeucayali.github.io/DUA-3.0/evolucion.html) · [Recursos](https://crebeucayali.github.io/DUA-3.0/recursos.html)
 
 ## Licencias
 
-- **Código original del sitio:** [MIT](LICENSE).
-- **Materiales educativos originales de NeuroNova Apps:** [CC BY-NC-SA 4.0](CONTENT-LICENSE.md).
+- **Código original y adaptación del sitio:** [MIT](LICENSE).
+- **Materiales educativos originales de NeuroNova Apps y su adaptación institucional:** [CC BY-NC-SA 4.0](CONTENT-LICENSE.md).
 - **Material de CAST y otros terceros:** conserva los derechos y condiciones de sus respectivos titulares; estas licencias no se extienden a él.
 
 ## Fuente conceptual y atribución
