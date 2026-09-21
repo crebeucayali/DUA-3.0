@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Centro de recursos del DUA 3.0: fundamentos, agencia del aprendiz, organización, estrategias, biblioteca y preguntas frecuentes.">
+<title>Centro de recursos DUA 3.0 | NeuroNova Apps</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f8fc;color:#1a2b3b;line-height:1.6;scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0}a{color:#075c96}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b86f05;outline-offset:3px}
+.skip{position:absolute;top:-90px;left:12px;background:white;padding:12px;z-index:5}.skip:focus{top:8px}
+header{background:#132f4c;color:#fff;padding:26px max(20px,calc((100vw - 1100px)/2))}header a{color:#d7f0ff}header h1{font-size:clamp(1.8rem,4vw,3rem);margin:12px 0 8px;line-height:1.18}header p{max-width:850px;margin:0 0 12px}
+nav{display:flex;gap:15px;flex-wrap:wrap;font-weight:650}
+main,.foot{max-width:1150px;margin:auto;padding:24px 20px}
+.tabnav{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 18px}.tabnav button{border:1px solid #b8cfde;border-radius:12px;background:white;color:#173f61;padding:11px 14px;cursor:pointer;font-weight:650}.tabnav button:hover{background:#e5f2fa}.tabnav button[aria-selected="true"]{background:#173f61;color:white;border-color:#173f61}
+.panel{background:white;border:1px solid #d4e1eb;border-radius:20px;padding:clamp(18px,3vw,30px);box-shadow:0 7px 28px #153c5a0b;font-size:.95rem}.panel h2{font-size:clamp(1.33rem,2.55vw,1.9rem)}.panel[hidden]{display:none}
+h2{margin:0 0 10px;font-size:clamp(1.4rem,2.7vw,2rem)}h3{margin:0 0 8px}.lead{max-width:900px;color:#405264;margin:0 0 20px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}
+.card{background:#edf4fa;border:1px solid #cfdfeb;border-radius:16px;padding:18px;min-width:0}.card p{margin:7px 0}.green{background:#ddf1e5;border-color:#a6d4b8}.purple{background:#eee6f5;border-color:#c8b1dc}.blue{background:#dff2fb;border-color:#a3d6ec}.tag{font-size:.81rem;letter-spacing:.04em;text-transform:uppercase;font-weight:750;color:#365c7c}
+details{border:1px solid #d2e0eb;border-radius:13px;margin:10px 0;background:#fff;padding:0 15px}summary{cursor:pointer;padding:13px 3px;font-weight:700}details p{margin:4px 0 16px}details[open]{background:#f4f9fd}
+.matrix{display:grid;grid-template-columns:1fr;gap:11px;margin:18px 0}.row{display:grid;grid-template-columns:150px repeat(3,minmax(0,1fr));gap:9px}.cell{border-radius:12px;padding:13px;background:#f0f4f8;border:1px solid #d0dfeb;min-width:0}.row.head .cell{background:#173f61;color:white;font-weight:700}.cell b{display:block}.cell small{display:block}.cell.g{background:#ddf1e5}.cell.p{background:#eee6f5}.cell.b{background:#dff2fb}
+.level{cursor:pointer;text-align:left;font:inherit;font-weight:750;background:#edf3f9}.level[aria-pressed="true"]{background:#173f61;color:white}.row.highlight .cell{outline:2px solid #173f61;outline-offset:-2px}.row:not(.highlight).dimmed{opacity:.48}
+.resource-context{padding:11px 14px;background:#f2f7fc;border-left:3px solid #6e97b3;border-radius:7px;margin:10px 0 17px}
+.example{padding:14px 18px;background:#edf6ff;border-left:4px solid #1471aa;border-radius:8px;margin:15px 0}
+.practice-guide{margin:19px 0 24px;border:1px solid #cbdfea;border-radius:17px;background:#f8fbfe;padding:clamp(15px,2.5vw,23px)}.practice-guide>h3{margin:0 0 7px;color:#173f61}.practice-guide>p{margin:0 0 15px;color:#405264}.practice-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:14px 0}.practice-steps button,.practice-navigation button{padding:10px 12px;border:1px solid #b7ccdc;background:white;color:#173f61;border-radius:10px;cursor:pointer;font-weight:650}.practice-steps button[aria-pressed="true"]{background:#173f61;color:white;border-color:#173f61}.practice-steps button:hover,.practice-navigation button:not(:disabled):hover{background:#e1eff9}.practice-steps button[aria-pressed="true"]:hover{background:#173f61}.practice-stage{background:white;border:1px solid #d4e1eb;border-radius:12px;padding:17px 19px}.practice-stage[hidden]{display:none}.practice-stage h4{font-size:1.08rem;color:#173f61;margin:0 0 10px}.practice-stage p{margin:8px 0}.practice-stage ul{padding-left:22px;margin:8px 0}.practice-stage li{margin:8px 0}.practice-links a{font-weight:650}.practice-navigation{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:13px}.practice-navigation button:disabled{opacity:.45;cursor:not-allowed}.practice-navigation span{font-size:.88rem;color:#405264;text-align:center}.practice-other-title{margin:27px 0 10px}
+@media(max-width:600px){.practice-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.practice-navigation{gap:5px}.practice-navigation button{padding:9px}}
+.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.resources a{display:block;margin-top:10px;font-weight:650}
+.footer-note{border-top:1px solid #d0dde8;margin-top:25px;padding-top:18px;font-size:.93rem}footer{background:#e5edf5;font-size:.9rem}footer p{margin:7px 0}
+.glossary-search{background:#f0f6fb;border:1px solid #d0e1ee;border-radius:13px;padding:13px 15px;margin:0 0 16px}.glossary-search label{display:block;font-weight:700;margin:0 0 7px}.glossary-search-line{display:flex;gap:8px;flex-wrap:wrap}.glossary-search input{flex:1;min-width:min(100%,220px);font:inherit;border:1px solid #9cb7cb;border-radius:9px;padding:9px 11px}.glossary-search button{background:#173f61;color:white;border:0;border-radius:9px;padding:9px 15px;cursor:pointer}.glossary-search button:hover{background:#265b83}.glossary-search p{margin:8px 0 0;font-size:.87rem;color:#405264}.glossary-entry[hidden]{display:none}.glossary-entry summary{color:#173f61}.glossary-entry p{line-height:1.55}.glossary-note{font-size:.87rem;color:#405264;margin:18px 0 0}
+@media(max-width:760px){.cards,.resources{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:5px;border:1px solid #cddfea;border-radius:14px;padding:9px}.row.head{display:none}.cell{padding:9px}.cell::before{content:attr(data-col);font-size:.75rem;font-weight:750;display:block}.tabnav button{flex-grow:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><nav aria-label="Navegación principal"><a href="./index.html">Explorar DUA 3.0</a><a href="./evolucion.html">Evolución del DUA</a><a href="./recursos.html" aria-current="page">Centro de recursos</a></nav><h1>Centro de recursos DUA 3.0</h1><p>Fundamentos, agencia del aprendiz y aplicación educativa reunidos en un solo espacio de consulta.</p></header>
+<main id="contenido"><div class="tabnav" role="tablist" aria-label="Secciones del centro de recursos">
+<button id="tab-fundamentos" type="button" role="tab" aria-controls="fundamentos" aria-selected="true" tabindex="0" data-tab="fundamentos">Fundamentos</button>
+<button id="tab-agencia" type="button" role="tab" aria-controls="agencia" aria-selected="false" tabindex="-1" data-tab="agencia">Agencia del aprendiz</button>
+<button id="tab-organizacion" type="button" role="tab" aria-controls="organizacion" aria-selected="false" tabindex="-1" data-tab="organizacion">Organización</button>
+<button id="tab-practica" type="button" role="tab" aria-controls="practica" aria-selected="false" tabindex="-1" data-tab="practica">Aplicación educativa</button>
+<button id="tab-biblioteca" type="button" role="tab" aria-controls="biblioteca" aria-selected="false" tabindex="-1" data-tab="biblioteca">Biblioteca</button>
+<button id="tab-preguntas" type="button" role="tab" aria-controls="preguntas" aria-selected="false" tabindex="-1" data-tab="preguntas">Preguntas frecuentes</button>
+<button id="tab-glosario" type="button" role="tab" aria-controls="glosario" aria-selected="false" tabindex="-1" data-tab="glosario">Glosario DUA</button>
+</div>
+<section class="panel" id="fundamentos" role="tabpanel" aria-labelledby="tab-fundamentos" tabindex="0">
+<h2>Fundamentos del Diseño Universal para el Aprendizaje</h2><p class="lead">El DUA es un marco para planificar oportunidades de aprendizaje que reconozcan la variabilidad de las personas y reduzcan barreras innecesarias. Las directrices de CAST orientan decisiones de diseño educativo; no son una receta única para toda aula.</p>
+<details><summary>¿Qué es el DUA?</summary><p>Es un marco de diseño educativo que propone anticipar la diversidad de maneras de participar, percibir la información y expresar lo aprendido. Su finalidad es ampliar las oportunidades de acceso y participación en experiencias de aprendizaje significativas. Por ejemplo, al presentar un tema con imágenes, explicación oral y objetos, el grupo dispone de más vías para comprenderlo.</p></details>
+<details><summary>¿Cuál es su finalidad en la versión 3.0?</summary><p>CAST sitúa la agencia del aprendiz como objetivo: favorecer que las personas actúen con intención y reflexión, utilicen recursos de manera auténtica y desarrollen estrategias orientadas a la acción. En el aula, esto se observa cuando un estudiante puede elegir una estrategia, explicar por qué la utilizó y revisar si le ayudó a alcanzar la meta.</p></details>
+<details><summary>¿Qué entendemos por barreras?</summary><p>Son condiciones de la actividad o del entorno que dificultan el acceso, la participación o la expresión de los aprendizajes. Pueden surgir por un único formato de información, tiempos rígidos, materiales inaccesibles o expectativas poco claras, entre otras situaciones. Por ejemplo, si la meta es comprender un cuento, exigir solo una respuesta escrita extensa puede introducir una barrera que no forma parte de esa meta.</p></details>
+<details><summary>¿Diseñar para la diversidad significa hacer una actividad diferente para cada estudiante?</summary><p>No necesariamente. Una planificación flexible puede ofrecer opciones comunes y apoyos graduados que resulten útiles para varias personas. Cuando un estudiante requiere apoyos individuales adicionales, deben considerarse en función de su situación y del contexto educativo. Por ejemplo, toda la clase puede disponer de apoyos visuales, mientras un estudiante utiliza además un recurso de comunicación específico.</p></details>
+<details><summary>¿Qué corresponde al docente y qué corresponde al estudiante?</summary><p>El docente diseña opciones, comunica metas, identifica barreras y ajusta apoyos. El estudiante participa en su aprendizaje, expresa preferencias, selecciona recursos y desarrolla progresivamente autonomía; el grado de apoyo depende de sus necesidades y del entorno. Por ejemplo, el docente ofrece varias formas de consultar un contenido y el estudiante selecciona la que le resulta útil; luego ambos revisan si permitió aprender.</p></details>
+<p><a href="https://udlguidelines.cast.org/es/" target="_blank" rel="noopener noreferrer">Ver el marco completo en CAST ↗</a></p>
+</section>
+<section class="panel" id="agencia" role="tabpanel" aria-labelledby="tab-agencia" tabindex="0" hidden>
+<h2>Agencia del aprendiz</h2><p class="lead">En el DUA 3.0, CAST presenta la agencia del aprendiz mediante tres características complementarias. Las explicaciones y situaciones siguientes son síntesis educativas de NeuroNova Apps.</p>
+<div class="cards"><article class="card green"><p class="tag">Compromiso</p><h3>Intencional y reflexiva</h3><p>Reconocer intereses, metas y motivaciones, y revisar las decisiones tomadas durante el aprendizaje.</p><p><strong>Ejemplo:</strong> el estudiante elige un tema vinculado con la meta de la sesión y reflexiona sobre su participación.</p><p><strong>Para observarlo:</strong> puede explicar qué quiere lograr y qué haría diferente en otra oportunidad.</p></article>
+<article class="card purple"><p class="tag">Representación</p><h3>Ingeniosa y auténtica</h3><p>Movilizar conocimientos y recursos pertinentes para construir significados a partir de distintas experiencias.</p><p><strong>Ejemplo:</strong> comparar explicaciones orales, imágenes y objetos para comprender un concepto.</p><p><strong>Para observarlo:</strong> relaciona recursos y experiencias con lo que ya sabe, no solo repite información.</p></article>
+<article class="card blue"><p class="tag">Acción y expresión</p><h3>Estratégica y orientada a la acción</h3><p>Definir metas, seleccionar estrategias, actuar y revisar avances con los apoyos necesarios.</p><p><strong>Ejemplo:</strong> planificar una tarea por pasos y verificar lo logrado con una lista de control.</p><p><strong>Para observarlo:</strong> identifica qué estrategia funcionó y ajusta el siguiente paso si lo necesita.</p></article></div>
+<p>Estas tres características describen una finalidad compartida, no categorías fijas para clasificar estudiantes. <a href="https://udlguidelines.cast.org/es/" target="_blank" rel="noopener noreferrer">Fuente conceptual: CAST (2024) ↗</a></p>
+</section>
+<section class="panel" id="organizacion" role="tabpanel" aria-labelledby="tab-organizacion" tabindex="0" hidden>
+<h2>Cómo se organiza el DUA 3.0</h2><p class="lead">El organizador de CAST combina tres principios con tres niveles transversales: acceso, soporte y función ejecutiva. Selecciona un nivel para destacar las directrices correspondientes. Las columnas responden a cómo favorecer el compromiso, presentar la información y permitir la acción y expresión; las filas agrupan apoyos que van desde el acceso hasta la planificación y revisión del aprendizaje.</p><p class="resource-context"><strong>Ejemplo de lectura:</strong> en la fila Acceso, la directriz 7 invita a acoger intereses, la 1 aborda la percepción de la información y la 4 considera formas de interactuar con la actividad. Juntas ayudan a revisar una experiencia desde los tres principios.</p>
+<div class="matrix" aria-label="Matriz de principios y niveles DUA"><div class="row head"><div class="cell">Nivel</div><div class="cell">Compromiso</div><div class="cell">Representación</div><div class="cell">Acción y expresión</div></div>
+<div class="row" data-level="acceso"><button class="cell level" type="button" aria-pressed="false">Acceso</button><div class="cell g" data-col="Compromiso"><b>Directriz 7</b>Acoger intereses e identidades</div><div class="cell p" data-col="Representación"><b>Directriz 1</b>Percepción</div><div class="cell b" data-col="Acción y expresión"><b>Directriz 4</b>Interacción</div></div>
+<div class="row" data-level="soporte"><button class="cell level" type="button" aria-pressed="false">Soporte</button><div class="cell g" data-col="Compromiso"><b>Directriz 8</b>Mantener el esfuerzo y la persistencia</div><div class="cell p" data-col="Representación"><b>Directriz 2</b>Lenguaje y los símbolos</div><div class="cell b" data-col="Acción y expresión"><b>Directriz 5</b>Expresión y comunicación</div></div>
+<div class="row" data-level="ejecutiva"><button class="cell level" type="button" aria-pressed="false">Función ejecutiva</button><div class="cell g" data-col="Compromiso"><b>Directriz 9</b>Capacidad emocional</div><div class="cell p" data-col="Representación"><b>Directriz 3</b>Construcción del conocimiento</div><div class="cell b" data-col="Acción y expresión"><b>Directriz 6</b>Desarrollo de estrategias</div></div></div>
+<p id="level-description" aria-live="polite">Selecciona un nivel para explorar su relación con los tres principios.</p><p><a href="./index.html">Explorar las nueve directrices y sus consideraciones →</a></p>
+</section>
+<section class="panel" id="practica" role="tabpanel" aria-labelledby="tab-practica" tabindex="0" hidden>
+<h2>Del principio a la práctica pedagógica</h2><p class="lead">Situaciones hipotéticas elaboradas por NeuroNova Apps para ilustrar decisiones de diseño. No son protocolos de evaluación ni indicaciones individuales para estudiantes concretos.</p>
+<section class="practice-guide" aria-labelledby="practice-guide-title">
+<h3 id="practice-guide-title">Del DUA a la práctica: un caso guiado</h3>
+<p>Explora una misma situación en cuatro pasos. Las propuestas orientan el diseño de la actividad; no describen ni diagnostican al estudiante.</p>
+<div class="practice-steps" role="group" aria-label="Pasos del caso guiado">
+<button type="button" data-practice-step="1" aria-pressed="true" aria-controls="practice-step-1">1. Situación</button>
+<button type="button" data-practice-step="2" aria-pressed="false" aria-controls="practice-step-2">2. Barreras</button>
+<button type="button" data-practice-step="3" aria-pressed="false" aria-controls="practice-step-3">3. Explorar el DUA</button>
+<button type="button" data-practice-step="4" aria-pressed="false" aria-controls="practice-step-4">4. Estrategias</button>
+</div>
+<div class="practice-stage" id="practice-step-1" data-practice-panel="1">
+<h4>1. Analiza la situación</h4>
+<p>En una actividad de producción de cuentos, Diego propone ideas creativas y las comunica oralmente. Sin embargo, tarda mucho en escribirlas y la consigna exige entregar una página completa escrita de manera individual.</p>
+<p><strong>Pregunta para el docente:</strong> ¿qué desea que sus estudiantes aprendan: organizar una historia, escribirla o ambas cosas?</p><p><strong>Pista:</strong> precisar esa meta permite decidir qué apoyos facilitan la tarea sin sustituir el aprendizaje que se quiere desarrollar.</p>
+</div>
+<div class="practice-stage" id="practice-step-2" data-practice-panel="2" hidden>
+<h4>2. Identifica las barreras de la actividad</h4>
+<p>La exigencia de una página escrita como única forma de trabajo puede dificultar que Diego exprese sus ideas. Además, una consigna extensa sin apoyos para organizar inicio, nudo y desenlace puede añadir una dificultad innecesaria.</p>
+<p><strong>Pregunta para el docente:</strong> ¿qué parte de la actividad puede flexibilizarse sin perder la meta de aprendizaje?</p><p><strong>Pista:</strong> separar la dificultad para escribir de la capacidad de imaginar y estructurar una historia evita confundir el medio de respuesta con todo el aprendizaje.</p>
+</div>
+<div class="practice-stage" id="practice-step-3" data-practice-panel="3" hidden>
+<h4>3. Explora directrices relacionadas</h4>
+<p>Estas consideraciones ofrecen distintas perspectivas para rediseñar la tarea. Selecciona un enlace para consultar su explicación completa en el organizador:</p>
+<ul class="practice-links">
+<li><strong>Compromiso:</strong> <a href="./index.html#7.1">7.1. Optimizar la elección y la autonomía ↗</a>. Dar opciones pertinentes para elegir el tema del cuento.</li>
+<li><strong>Representación:</strong> <a href="./index.html#2.5">2.5. Ilustrar mediante múltiples medios ↗</a>. Ofrecer imágenes o una secuencia visual que ayude a comprender y organizar la estructura narrativa.</li>
+<li><strong>Acción y expresión:</strong> <a href="./index.html#5.1">5.1. Usar múltiples medios para la comunicación ↗</a>. Permitir desarrollar y comunicar ideas utilizando diferentes medios, según la meta de la actividad.</li>
+</ul>
+<p><strong>Pregunta para el docente:</strong> ¿qué consideración ayuda a atender la barrera identificada en este caso?</p><p><strong>Pista:</strong> una misma actividad puede requerir más de una directriz; conviene elegir las que respondan a una barrera concreta, no aplicarlas todas a la vez.</p>
+</div>
+<div class="practice-stage" id="practice-step-4" data-practice-panel="4" hidden>
+<h4>4. Selecciona estrategias y revisa la meta</h4>
+<ul>
+<li>Ofrecer temas o personajes entre los que cada estudiante pueda elegir.</li>
+<li>Proporcionar un organizador visual de inicio, nudo y desenlace.</li>
+<li>Permitir narrar o grabar primero las ideas y luego utilizarlas como apoyo para redactar.</li>
+<li>Valorar la estructura del cuento con criterios explícitos y ofrecer retroalimentación para mejorar la producción.</li>
+</ul>
+<p><strong>Importante:</strong> si la meta es aprender a escribir, la narración oral puede servir como apoyo para producir el texto, no necesariamente sustituirlo. Si la meta es construir y comunicar una historia, pueden admitirse otros formatos de expresión.</p><p><strong>Para comprobar el avance:</strong> observar si la historia presenta inicio, nudo y desenlace y si el apoyo ofrecido permitió avanzar hacia la meta acordada.</p>
+</div>
+<div class="practice-navigation">
+<button type="button" id="practice-prev" disabled>← Anterior</button>
+<span id="practice-progress" role="status" aria-live="polite">Paso 1 de 4</span>
+<button type="button" id="practice-next">Siguiente →</button>
+</div>
+</section>
+<h3 class="practice-other-title">Otras situaciones educativas</h3>
+<details><summary>Comprender instrucciones y contenidos</summary><div class="example"><strong>Barrera posible:</strong> la explicación se ofrece una sola vez y solo de forma oral.<br><strong>Opciones de diseño:</strong> combinar instrucciones breves, demostración, apoyos visuales y comprobación de comprensión.<br><strong>Ejemplo:</strong> mostrar tres pasos con pictogramas y pedir que un estudiante indique qué hará primero.<br><strong>Referencia conceptual:</strong> representación, directrices 1 y 2.</div></details>
+<details><summary>Participar en una actividad colectiva</summary><div class="example"><strong>Barrera posible:</strong> una actividad competitiva reconoce únicamente la rapidez.<br><strong>Opciones de diseño:</strong> permitir roles, metas de cooperación y alternativas de participación con apoyos accesibles.<br><strong>Ejemplo:</strong> en un circuito motor, valorar la participación y permitir distintas formas de completar cada estación.<br><strong>Referencia conceptual:</strong> compromiso 7 y 8; acción y expresión 4.</div></details>
+<details><summary>Expresar lo aprendido</summary><div class="example"><strong>Barrera posible:</strong> se exige un único formato de respuesta aunque la meta no requiera ese formato.<br><strong>Opciones de diseño:</strong> ofrecer respuesta oral, escrita, visual o apoyada con tecnología, siempre que permita evidenciar el aprendizaje previsto.<br><strong>Ejemplo:</strong> explicar el ciclo del agua con un esquema comentado cuando se evalúa la comprensión, no la escritura.<br><strong>Referencia conceptual:</strong> acción y expresión, directrices 4 y 5.</div></details>
+<details><summary>Planificar y revisar una tarea</summary><div class="example"><strong>Barrera posible:</strong> la actividad requiere recordar muchos pasos sin apoyos.<br><strong>Opciones de diseño:</strong> clarificar metas, dividir la actividad, ofrecer organizadores y facilitar seguimiento del progreso.<br><strong>Ejemplo:</strong> usar una lista de tres pasos para preparar, realizar y revisar una exposición.<br><strong>Referencia conceptual:</strong> directriz 6 y compromiso 8.</div></details>
+<p>Los ejemplos son propuestas generales: su pertinencia debe valorarse según el propósito, la edad, el contexto y los apoyos necesarios.</p>
+</section>
+<section class="panel" id="biblioteca" role="tabpanel" aria-labelledby="tab-biblioteca" tabindex="0" hidden>
+<h2>Biblioteca de recursos y fuentes</h2><p class="lead">Enlaces a documentos y orientaciones oficiales. Los archivos de CAST permanecen alojados en su sitio y conservan sus condiciones de uso.</p>
+<div class="resources"><article class="card"><h3>Directrices DUA 3.0 en español</h3><p>Organización completa de principios, directrices y consideraciones.</p><p><strong>Útil para:</strong> contrastar nombres, numeración y formulaciones del marco antes de incorporarlos a una planificación.</p><a href="https://udlguidelines.cast.org/es/" target="_blank" rel="noopener noreferrer">Consultar en CAST ↗</a></article>
+<article class="card"><h3>Organizadores y descargas</h3><p>Versiones de los organizadores gráficos y materiales oficiales.</p><p><strong>Útil para:</strong> consultar formatos visuales durante una capacitación o una reunión de trabajo docente.</p><a href="https://udlguidelines.cast.org/more/downloads/" target="_blank" rel="noopener noreferrer">Abrir descargas oficiales ↗</a></article>
+<article class="card"><h3>Evolución de las directrices</h3><p>Línea de tiempo de versiones 1.0, 2.0, 2.1, 2.2 y 3.0.</p><p><strong>Útil para:</strong> comprender por qué materiales publicados en años diferentes pueden utilizar términos distintos.</p><a href="./evolucion.html">Consultar cronología de NeuroNova Apps →</a></article>
+<article class="card"><h3>Proceso de actualización 3.0</h3><p>Contexto de la revisión publicada en 2024.</p><p><strong>Útil para:</strong> conocer el proceso de actualización y situar la versión actual frente a las anteriores.</p><a href="https://udlguidelines.cast.org/more/about-guidelines-3-0/" target="_blank" rel="noopener noreferrer">Consultar en CAST ↗</a></article></div>
+</section>
+<section class="panel" id="preguntas" role="tabpanel" aria-labelledby="tab-preguntas" tabindex="0" hidden>
+<h2>Preguntas frecuentes</h2><p class="lead">Orientaciones generales para la práctica docente. Las respuestas no sustituyen las disposiciones educativas aplicables ni la valoración individual de apoyos.</p>
+<details><summary>¿El DUA se dirige únicamente a estudiantes con discapacidad?</summary><p>No. Se orienta al diseño de oportunidades de aprendizaje para la diversidad de personas; puede beneficiar a estudiantes con y sin discapacidad. Por ejemplo, ofrecer instrucciones claras y opciones de respuesta puede ayudar a estudiantes con diferentes experiencias y necesidades.</p></details>
+<details><summary>¿El DUA reemplaza los ajustes razonables o apoyos individuales?</summary><p>No. El diseño flexible desde la planificación y las medidas individualizadas pueden ser complementarios. Los apoyos específicos se determinan según las barreras y necesidades del estudiante y las obligaciones normativas del contexto. Por ejemplo, ofrecer subtítulos a toda la clase no elimina la necesidad de un apoyo adicional cuando una persona lo requiere.</p></details>
+<details><summary>¿Debo utilizar obligatoriamente las 36 consideraciones en una sesión?</summary><p>No es una lista de cumplimiento por sesión. Se seleccionan opciones pertinentes según las metas, las barreras identificadas y el contexto. La calidad de las decisiones importa más que sumar consideraciones. En una sesión, trabajar con dos o tres opciones bien justificadas puede ser más útil que marcar todas sin relación con la meta.</p></details>
+<details><summary>¿Dar opciones significa reducir la exigencia académica?</summary><p>No necesariamente. Las opciones pueden cambiar la vía de acceso o expresión sin alterar la meta que se busca evaluar. Conviene distinguir el aprendizaje esperado de los medios utilizados para demostrarlo. Si se evalúa la comprensión de un fenómeno, un esquema explicado puede servir; si se evalúa escritura, conviene mantener esa meta con apoyos adecuados.</p></details>
+<details><summary>¿Cómo empiezo a aplicar el DUA en mi aula?</summary><p>Define el propósito de aprendizaje, revisa qué obstáculos podrían surgir en la actividad, ofrece opciones pertinentes y recoge evidencias para mejorar la siguiente planificación. Un inicio posible es revisar una sola actividad: ¿quién podría quedar fuera por cómo se presenta la información o se pide responder?</p></details>
+<details><summary>¿Se puede aplicar con pocos recursos tecnológicos?</summary><p>Sí. Instrucciones claras, materiales manipulativos, trabajo cooperativo y diversas formas de respuesta pueden ampliar las opciones. La tecnología es un recurso posible, no un requisito universal. Por ejemplo, tarjetas con imágenes, instrucciones en la pizarra y objetos concretos permiten diversificar una clase sin conexión a internet.</p></details>
+</section>
+<section class="panel" id="glosario" role="tabpanel" aria-labelledby="tab-glosario" tabindex="0" hidden>
+<h2>Glosario interactivo del DUA</h2>
+<p class="lead">Consulta términos frecuentes del Diseño Universal para el Aprendizaje. Selecciona un concepto para ver su significado y un ejemplo breve de aula.</p>
+<div class="glossary-search"><label for="glossary-query">Buscar un término o una palabra de su explicación</label><div class="glossary-search-line"><input id="glossary-query" type="search" autocomplete="off" placeholder="Ej.: barreras, motivación, apoyos…"><button id="glossary-clear" type="button">Limpiar</button></div><p id="glossary-status" role="status" aria-live="polite">Se muestran 10 conceptos.</p></div>
+<div class="glossary-items">
+<details class="glossary-entry"><summary>Barreras para el aprendizaje y la participación</summary><p><strong>Significado:</strong> obstáculos que aparecen al interactuar las características de los estudiantes con una actividad, los materiales, el entorno o las formas de evaluación.</p><p><strong>Ejemplo:</strong> exigir únicamente respuestas escritas puede impedir que un estudiante demuestre lo que sabe oralmente.</p><p><strong>Para tener en cuenta:</strong> La barrera se analiza en relación con la tarea y el entorno, no como una etiqueta del estudiante.</p></details>
+<details class="glossary-entry"><summary>Andamiaje</summary><p><strong>Significado:</strong> apoyo temporal que ayuda a realizar una tarea y se ajusta o retira gradualmente conforme se desarrolla mayor autonomía.</p><p><strong>Ejemplo:</strong> ofrecer una secuencia visual para escribir un cuento y reducir las pistas cuando el estudiante ya organiza sus ideas.</p><p><strong>Para tener en cuenta:</strong> El apoyo se revisa durante la actividad: mantenerlo siempre igual también puede limitar la autonomía.</p></details>
+<details class="glossary-entry"><summary>Agencia del aprendiz</summary><p><strong>Significado:</strong> capacidad de actuar con intención, reflexionar, tomar decisiones y utilizar recursos para orientar el propio aprendizaje.</p><p><strong>Ejemplo:</strong> elegir cómo presentar un proyecto, explicar la elección y revisar el resultado obtenido.</p><p><strong>Para tener en cuenta:</strong> No significa aprender sin ayuda; incluye reconocer cuándo y cómo utilizar apoyos.</p></details>
+<details class="glossary-entry"><summary>Autorregulación</summary><p><strong>Significado:</strong> reconocer y ajustar emociones, atención y estrategias para avanzar hacia una meta de aprendizaje.</p><p><strong>Ejemplo:</strong> identificar una dificultad, pedir ayuda o hacer una pausa breve y retomar la tarea con otra estrategia.</p><p><strong>Para tener en cuenta:</strong> Puede enseñarse con modelos, recordatorios y oportunidades para revisar estrategias.</p></details>
+<details class="glossary-entry"><summary>Variabilidad del aprendiz</summary><p><strong>Significado:</strong> diversidad de intereses, conocimientos, experiencias y formas de participar y aprender, que también pueden cambiar según el contexto.</p><p><strong>Ejemplo:</strong> un mismo estudiante puede comprender mejor una explicación oral en una actividad y necesitar imágenes en otra.</p><p><strong>Para tener en cuenta:</strong> Por eso conviene ofrecer opciones flexibles sin encasillar a cada persona en un único estilo.</p></details>
+<details class="glossary-entry"><summary>Accesibilidad</summary><p><strong>Significado:</strong> condiciones que permiten percibir, comprender y utilizar recursos y entornos con las menores barreras posibles.</p><p><strong>Ejemplo:</strong> acompañar un video con subtítulos y una descripción comprensible de su información visual.</p><p><strong>Para tener en cuenta:</strong> Es preferible anticiparla al diseñar el recurso, en vez de esperar a que aparezca la dificultad.</p></details>
+<details class="glossary-entry"><summary>Apoyos educativos</summary><p><strong>Significado:</strong> recursos, ajustes o formas de acompañamiento que facilitan el acceso, la participación y el progreso hacia las metas.</p><p><strong>Ejemplo:</strong> usar material manipulativo para explorar fracciones antes de representarlas con números.</p><p><strong>Para tener en cuenta:</strong> Pueden ser materiales, comunicativos, organizativos o personales según la situación.</p></details>
+<details class="glossary-entry"><summary>Funciones ejecutivas</summary><p><strong>Significado:</strong> procesos que ayudan a establecer metas, organizar pasos, mantener información relevante y revisar las propias acciones.</p><p><strong>Ejemplo:</strong> utilizar una lista breve de pasos para planificar, realizar y comprobar un experimento.</p><p><strong>Para tener en cuenta:</strong> Una meta visible y criterios de revisión ayudan a practicar estos procesos durante la tarea.</p></details>
+<details class="glossary-entry"><summary>Múltiples medios de representación</summary><p><strong>Significado:</strong> diferentes formas de presentar información para favorecer que los estudiantes accedan a ella y construyan significado.</p><p><strong>Ejemplo:</strong> enseñar el ciclo del agua mediante una explicación oral, una imagen y una demostración.</p><p><strong>Para tener en cuenta:</strong> Diversificar no implica mostrar todo a la vez: se eligen medios pertinentes para la meta.</p></details>
+<details class="glossary-entry"><summary>Múltiples medios de acción y expresión</summary><p><strong>Significado:</strong> alternativas para interactuar con las actividades y comunicar lo aprendido, respetando la meta educativa.</p><p><strong>Ejemplo:</strong> permitir explicar un proceso mediante un texto, una exposición oral o un esquema cuando cualquiera de esas vías permite evidenciar el mismo aprendizaje.</p><p><strong>Para tener en cuenta:</strong> La opción elegida debe permitir observar aquello que realmente se busca aprender.</p></details>
+</div>
+<p class="glossary-note">Definiciones y ejemplos educativos elaborados por NeuroNova Apps para facilitar la consulta; no son citas textuales ni definiciones oficiales de CAST.</p>
+</section>
+<div class="footer-note"><p><strong>Fundamento conceptual:</strong> CAST. (2024). <em>CAST Universal Design for Learning Guidelines, version 3.0</em>. <a href="https://udlguidelines.cast.org/es/" target="_blank" rel="noopener noreferrer">Fuente oficial en español ↗</a></p><p>Las explicaciones, ejemplos y preguntas de esta página son elaboraciones educativas originales de NeuroNova Apps basadas en el marco de CAST. Este proyecto es independiente y no es una publicación oficial ni está respaldado por CAST.</p></div>
+</main><footer><div class="foot"><p>© 2026 NeuroNova Apps · Contenidos educativos originales: <a href="https://github.com/neuronova-apps/DUA-3.0/blob/main/CONTENT-LICENSE.md">CC BY-NC-SA 4.0</a> · Código propio: <a href="https://github.com/neuronova-apps/DUA-3.0/blob/main/LICENSE">MIT</a>.</p><p><a href="https://github.com/neuronova-apps/DUA-3.0/blob/main/ATTRIBUTION.md">Fuentes y atribuciones</a> · <a href="./index.html">Volver al explorador</a></p></div></footer>
+<script>
+"use strict";
+const tabs=[...document.querySelectorAll('[role="tab"]')];
+const panels=[...document.querySelectorAll('[role="tabpanel"]')];
+function showTab(id,updateHash=true){if(!panels.some(p=>p.id===id))return;for(const tab of tabs){const active=tab.dataset.tab===id;tab.setAttribute("aria-selected",String(active));tab.tabIndex=active?0:-1}for(const panel of panels)panel.hidden=panel.id!==id;if(updateHash)history.replaceState(null,"","#"+id)}
+tabs.forEach((tab,index)=>{tab.addEventListener("click",()=>showTab(tab.dataset.tab));tab.addEventListener("keydown",event=>{const keys=["ArrowRight","ArrowLeft","Home","End"];if(!keys.includes(event.key))return;event.preventDefault();const next=event.key==="Home"?0:event.key==="End"?tabs.length-1:(index+(event.key==="ArrowRight"?1:-1)+tabs.length)%tabs.length;showTab(tabs[next].dataset.tab);tabs[next].focus()})});
+const init=decodeURIComponent(location.hash.slice(1));if(panels.some(p=>p.id===init))showTab(init,false);
+window.addEventListener("hashchange",()=>{const id=decodeURIComponent(location.hash.slice(1));if(panels.some(p=>p.id===id))showTab(id,false)});
+/* Recorrido local de cuatro pasos en Aplicación educativa; sin afectar las pestañas generales. */
+const practiceSteps=[...document.querySelectorAll("[data-practice-step]")];
+const practicePanels=[...document.querySelectorAll("[data-practice-panel]")];
+const practiceProgress=document.getElementById("practice-progress");
+const practicePrev=document.getElementById("practice-prev");
+const practiceNext=document.getElementById("practice-next");
+let practiceActive=1;
+function showPracticeStep(step){
+ if(step<1||step>practiceSteps.length)return;
+ practiceActive=step;
+ for(const button of practiceSteps)button.setAttribute("aria-pressed",String(Number(button.dataset.practiceStep)===step));
+ for(const panel of practicePanels)panel.hidden=Number(panel.dataset.practicePanel)!==step;
+ practicePrev.disabled=step===1;
+ practiceNext.disabled=step===practiceSteps.length;
+ practiceProgress.textContent="Paso "+step+" de "+practiceSteps.length;
+}
+practiceSteps.forEach(button=>button.addEventListener("click",()=>showPracticeStep(Number(button.dataset.practiceStep))));
+practicePrev.addEventListener("click",()=>showPracticeStep(practiceActive-1));
+practiceNext.addEventListener("click",()=>showPracticeStep(practiceActive+1));
+/* Glosario: búsqueda local, sin modificar las pestañas ni el cuadro existentes. */
+const glossaryQuery=document.getElementById("glossary-query");
+const glossaryEntries=[...document.querySelectorAll(".glossary-entry")];
+const glossaryStatus=document.getElementById("glossary-status");
+const normalizeGlossary=text=>text.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();
+function filterGlossary(){
+ const query=normalizeGlossary(glossaryQuery.value);
+ let visible=0;
+ for(const entry of glossaryEntries){
+  const match=!query||normalizeGlossary(entry.textContent).includes(query);
+  entry.hidden=!match;
+  if(match)visible++;
+ }
+ glossaryStatus.textContent=visible===1?"Se muestra 1 concepto.":"Se muestran "+visible+" conceptos.";
+ if(!visible)glossaryStatus.textContent="No se encontraron conceptos. Prueba otra palabra.";
+}
+glossaryQuery.addEventListener("input",filterGlossary);
+document.getElementById("glossary-clear").addEventListener("click",()=>{glossaryQuery.value="";filterGlossary();glossaryQuery.focus()});
+const rows=[...document.querySelectorAll(".matrix .row[data-level]")];for(const row of rows){row.querySelector("button").addEventListener("click",()=>{const was=row.classList.contains("highlight");for(const r of rows){r.classList.remove("highlight","dimmed");r.querySelector("button").setAttribute("aria-pressed","false")}if(was){document.getElementById("level-description").textContent="Selecciona un nivel para explorar su relación con los tres principios.";return}for(const r of rows)r.classList.add(r===row?"highlight":"dimmed");row.querySelector("button").setAttribute("aria-pressed","true");document.getElementById("level-description").textContent="Nivel seleccionado: "+row.querySelector("button").textContent+". Se destacan las tres directrices de esta fila."})}
+</script>
+</body></html>
