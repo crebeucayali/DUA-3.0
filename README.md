@@ -3,7 +3,7 @@ Repositorio de recursos, orientaciones y estrategias educativas basadas en el Di
 
 ## Sitio web
 
-[Visitar DUA 3.0 de NeuroNova Apps](https://neuronova-apps.github.io/DUA-3.0/).
+[Visitar DUA 3.0 del CREBE SEÑOR DE LOS MILAGROS](https://crebeucayali.github.io/DUA-3.0/).
 
 ## Licencias
 
