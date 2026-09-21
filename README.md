@@ -1,5 +1,7 @@
-# DUA-3.0
-Repositorio de recursos, orientaciones y estrategias educativas basadas en el Diseño Universal para el Aprendizaje (DUA), orientado a promover prácticas pedagógicas inclusivas y reducir las barreras para el aprendizaje y la participación.
+# DUA-3.0 | CREBE Ucayali
+Repositorio institucional del CREBE "Señor de los Milagros" - Ucayali con recursos, orientaciones y estrategias educativas basadas en el Diseño Universal para el Aprendizaje (DUA), orientado a promover prácticas pedagógicas inclusivas y reducir las barreras para el aprendizaje y la participación.
+
+Esta versión adapta el proyecto educativo original de NeuroNova Apps. La autoría de los materiales y sus condiciones de uso se mantienen documentadas en los archivos de atribución y licencia.
 
 ## Sitio web
 
