@@ -1,0 +1,40 @@
+/* Identidad visual institucional CREBE Ucayali.
+   Alcance: cabeceras, navegacion y pie; no modifica el tablero DUA ni sus interacciones. */
+:root{--crebe-navy:#0b3550;--crebe-teal:#0f766e;--crebe-ink:#122c46}
+.hero,body>header{
+  background-color:var(--crebe-navy);
+  background-image:linear-gradient(135deg,rgba(11,53,80,.78) 0%,rgba(15,79,87,.72) 48%,rgba(15,118,110,.72) 100%),url("https://crebeucayali.github.io/patron-shipibo.webp");
+  background-position:center,center;
+  background-size:cover,320px auto;
+  background-repeat:no-repeat,repeat;
+  color:#fff;
+}
+.crebe-identity{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  gap:14px 22px;margin:0 0 28px;position:relative;
+}
+.crebe-identity-mark{display:flex;align-items:center;gap:14px;min-width:0;flex:1 1 350px;text-decoration:none;color:#fff!important}
+.crebe-identity-logo{display:block;width:52px;height:52px;flex:0 0 52px;object-fit:contain;padding:5px;border-radius:16px;background:#fff}
+.crebe-identity-name{display:flex;min-width:0;flex-direction:column;line-height:1.3}
+.crebe-identity-name strong{font-size:.95rem;font-weight:800;letter-spacing:.025em;color:#fff}
+.crebe-identity-name small{font-size:.79rem;font-weight:600;color:#e4f6f1}
+.crebe-identity-links{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.crebe-identity-links a{display:inline-block;padding:9px 17px;border:1px solid rgba(255,255,255,.55);border-radius:999px;color:#fff!important;text-decoration:none;font-size:.9rem;font-weight:750;background:rgba(8,47,73,.22)}
+.crebe-identity-links a:hover,.crebe-identity-links a:focus-visible{background:rgba(255,255,255,.17);text-decoration:underline}
+.hero .brand,.crebe-section-label{color:#e2fff5;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.hero h1,body>header h1{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.025em;text-wrap:balance}
+.hero p,body>header>p{color:#fff}
+body>nav[aria-label="Navegación del sitio"]{background:#e8f2f1!important;border-bottom:1px solid #cfe4df;gap:15px!important}
+body>nav[aria-label="Navegación del sitio"] a{color:#0b3550;font-weight:750}
+body>header nav[aria-label="Navegación principal"]{margin-bottom:18px}
+body>header nav[aria-label="Navegación principal"] a{color:#e3fff7}
+footer{background:linear-gradient(135deg,#082f49 0%,#0b4f4a 58%,#0f766e 100%);color:#fff}
+footer a{color:#d6fff7}
+footer a:hover,footer a:focus-visible{color:#fff}
+@media(max-width:600px){
+ .crebe-identity{margin-bottom:22px}
+ .crebe-identity-logo{width:46px;height:46px;flex-basis:46px}
+ .crebe-identity-name strong{font-size:.84rem}
+ .crebe-identity-name small{font-size:.72rem}
+ .crebe-identity-links a{padding:8px 13px}
+}
