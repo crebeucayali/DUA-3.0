@@ -63,3 +63,12 @@ footer.crebe-footer{margin-top:28px;background:#1d354b;color:#fff;font-size:.91r
  .crebe-footer .crebe-footer-logo{width:47px;height:47px;flex-basis:47px}
  .crebe-footer .crebe-footer-identity{gap:12px}
 }
+
+/* Ajuste compartido de altura de la franja superior EVA */
+@media (min-width:601px){
+  .crebe-identity{
+    min-height:74px;
+    padding-top:6px;
+    padding-bottom:6px;
+  }
+}
