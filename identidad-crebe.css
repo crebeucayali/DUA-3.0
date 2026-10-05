@@ -19,7 +19,7 @@
 .crebe-identity-name strong{font-size:.95rem;font-weight:800;letter-spacing:.025em;color:#fff}
 .crebe-identity-name small{font-size:.79rem;font-weight:600;color:#e4f6f1}
 .crebe-identity-links{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
-.crebe-identity-links a{display:inline-block;padding:9px 17px;border:1px solid rgba(255,255,255,.55);border-radius:999px;color:#fff!important;text-decoration:none;font-size:.9rem;font-weight:750;background:rgba(8,47,73,.22)}
+.crebe-identity-links a{display:inline-block;padding:9px 17px;border:1px solid rgba(255,255,255,.55);border-radius:999px;color:#fff!important;text-decoration:none;font-size:0.9375rem;font-weight:600;background:rgba(8,47,73,.22)}
 .crebe-identity-links a:hover,.crebe-identity-links a:focus-visible{background:rgba(255,255,255,.17);text-decoration:underline}
 .hero .brand,.crebe-section-label{color:#e2fff5;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
 .hero h1,body>header h1{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.025em;text-wrap:balance}
@@ -36,7 +36,7 @@ footer a:hover,footer a:focus-visible{color:#fff}
  .crebe-identity-logo{width:46px;height:46px;flex-basis:46px}
  .crebe-identity-name strong{font-size:.84rem}
  .crebe-identity-name small{font-size:.72rem}
- .crebe-identity-links a{padding:8px 13px}
+ .crebe-identity-links a{padding:8px 13px;font-size:0.875rem}
 }
 
 /* Pie institucional de DUA 3.0: adaptación del formato EVA.
