@@ -267,3 +267,50 @@ html.eva-alto-contraste :is(.guideline.is-dimmed,.principle-header.is-principle-
   }
   html.eva-alto-contraste dialog .modal-actions button:disabled {opacity:.65 !important;}
 }
+
+
+/* EVA 2.0: navegación DUA legible y separada incluso con zoom reducido.
+   Se mantiene el orden de los tres accesos y se permite salto de línea. */
+.dua-site-nav{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px 14px;
+  padding:12px max(20px,calc((100vw - 1440px)/2 + 20px));
+  font-size:max(1rem,16px);
+  line-height:1.45;
+}
+.dua-site-nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:40px;
+  padding:8px 12px;
+  border:1px solid #b7cddd;
+  border-radius:10px;
+  color:#103d60;
+  background:#fff;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  overflow-wrap:break-word;
+}
+.dua-site-nav a[aria-current="page"]{
+  background:#103d60;
+  color:#fff;
+  border-color:#103d60;
+  text-decoration:none;
+}
+.dua-site-nav a:hover{background:#e1eff9;color:#103d60;}
+.dua-site-nav a[aria-current="page"]:hover{background:#103d60;color:#fff;}
+.dua-site-nav a:focus-visible{outline:3px solid #c47700;outline-offset:3px;}
+html.eva-alto-contraste .dua-site-nav,
+html.eva-alto-contraste .dua-site-nav a,
+html.eva-alto-contraste .dua-site-nav a:hover,
+html.eva-alto-contraste .dua-site-nav a[aria-current="page"]{
+  background:#000!important;color:#ffff00!important;border-color:#fff!important;
+}
+@media(max-width:520px){
+  .dua-site-nav{gap:8px;padding:10px 15px;}
+  .dua-site-nav a{min-height:44px;flex:1 1 100%;}
+}
