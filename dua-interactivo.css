@@ -223,3 +223,47 @@ html.eva-alto-contraste #copy-content-text{
  background:#000!important;color:#fff!important;border-color:#fff!important;
 }
 html.eva-alto-contraste :is(.guideline.is-dimmed,.principle-header.is-principle-dimmed){opacity:1!important;}
+
+
+/* EVA 2.0: segunda correccion de alto contraste del explorador.
+   Controles, rotulos verticales y dialogos mantienen fondo y texto compatibles. */
+@media screen {
+  html.eva-alto-contraste :is(.explore-tools,.search-result,.row-label,.row-label.is-level-active,.principle-header,.principle-header.is-principle-selected,dialog,.detail-example,dialog .note) {
+    background:#000 !important;
+    background-image:none !important;
+    color:#fff !important;
+    border:2px solid #fff !important;
+    opacity:1 !important;
+  }
+  html.eva-alto-contraste .row-label span,
+  html.eva-alto-contraste .principle-header :is(.eyebrow,h3,p,.principle-hint),
+  html.eva-alto-contraste dialog :is(h2,h3,p,li,span,strong,.modal-meta,.principle-note,.level-reference,.hint) {
+    color:#fff !important;
+    opacity:1 !important;
+  }
+  html.eva-alto-contraste :is(.explore-tools,.search-results,.dua-orientation) :is(
+    button,button:hover,button:focus-visible,button[aria-pressed="true"]
+  ),
+  html.eva-alto-contraste dialog :is(
+    .close,.share-detail button,.modal-actions button,.modal-actions button:hover
+  ) {
+    color:#ffff00 !important;
+    background:#000 !important;
+    border:2px solid #fff !important;
+    opacity:1 !important;
+  }
+  html.eva-alto-contraste :is(.search-line input,.search-result,.search-result:hover,.search-result:focus-visible) {
+    color:#fff !important;
+    background:#000 !important;
+    border:2px solid #fff !important;
+  }
+  html.eva-alto-contraste .search-line input::placeholder {color:#eee !important;opacity:1 !important;}
+  html.eva-alto-contraste .search-result :is(strong,small) {color:#fff !important;}
+  html.eva-alto-contraste .principle-header::after {background:#fff !important;}
+  html.eva-alto-contraste :is(.row-label,.level-inline).is-level-active {outline:3px solid #ffff00;outline-offset:2px;}
+  html.eva-alto-contraste .guideline.is-highlighted .search-match,
+  html.eva-alto-contraste .guideline.is-highlighted .guide-open.search-match {
+    color:#000 !important;background:#ffff00 !important;box-shadow:none !important;
+  }
+  html.eva-alto-contraste dialog .modal-actions button:disabled {opacity:.65 !important;}
+}
