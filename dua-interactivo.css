@@ -205,3 +205,21 @@ dialog .close{float:right;background:#edf2f8;border:0;border-radius:50%;width:38
 
 /* Respaldo temporal para copiar enlaces cuando Clipboard API no está disponible. */
 .share-copy-fallback{position:fixed;top:12px;left:12px;width:min(90vw,520px);z-index:9999}
+
+
+/* EVA 2.0: alto contraste para superficies propias del modulo DUA.
+   Los estilos normales y el contenido grafico permanecen intactos. */
+html.eva-alto-contraste body,
+html.eva-alto-contraste :is(.guideline,.source,.dua-orientation,.orientation-card,.orientation-roles>div,.orientation-note,.level-inline,.skip){
+ background:#000!important;background-image:none!important;color:#fff!important;border-color:#fff!important;
+}
+html.eva-alto-contraste :is(.orientation-focus,.guideline .search-match,.checkpoint,.guide-open){
+ background:#000!important;color:#ffff00!important;border-color:#fff!important;
+}
+html.eva-alto-contraste :is(.orientation-card,.orientation-roles,.dua-orientation,.guideline) :is(p,h2,h3,strong,span,summary){
+ color:#fff!important;opacity:1!important;
+}
+html.eva-alto-contraste #copy-content-text{
+ background:#000!important;color:#fff!important;border-color:#fff!important;
+}
+html.eva-alto-contraste :is(.guideline.is-dimmed,.principle-header.is-principle-dimmed){opacity:1!important;}
