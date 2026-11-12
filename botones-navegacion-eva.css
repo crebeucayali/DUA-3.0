@@ -1,0 +1,75 @@
+/* Navegación EVA en DUA 3.0. Hoja local por CSP style-src 'self'.
+   Aplicación exclusiva a los accesos de la identidad institucional. */
+.crebe-identity .crebe-identity-links {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  align-items:center;
+  gap:9px;
+}
+.crebe-identity .crebe-identity-links > a.eva-acceso-destacado {
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  box-sizing:border-box;
+  min-width:0;
+  min-height:44px;
+  width:auto;
+  max-width:100%;
+  padding:10px 16px;
+  border:1px solid #d7e9ef;
+  border-radius:999px;
+  background:#103b57;
+  color:#fff !important;
+  font-size:.9375rem;
+  font-weight:700;
+  line-height:1.25;
+  text-decoration:none;
+  text-shadow:none;
+  box-shadow:0 4px 12px rgba(0,20,35,.22);
+  transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.crebe-identity .crebe-identity-links > a.eva-acceso-destacado:hover {
+  background:#19577a;
+  border-color:#fff;
+  color:#fff !important;
+  transform:translateY(-1px);
+  box-shadow:0 6px 15px rgba(0,20,35,.3);
+}
+.crebe-identity .crebe-identity-links > a.eva-acceso-destacado:focus-visible {
+  outline:3px solid #ffd166;
+  outline-offset:3px;
+}
+.crebe-identity .crebe-identity-links > a.eva-acceso-destacado > .eva-acceso-icono {
+  display:block;
+  box-sizing:border-box;
+  width:18px !important;
+  height:18px !important;
+  min-width:18px;
+  min-height:18px;
+  max-width:18px;
+  max-height:18px;
+  flex:0 0 18px;
+  margin:0;
+  padding:0;
+  background:none;
+  fill:none;
+  stroke:currentColor;
+  vertical-align:middle;
+}
+.crebe-identity .crebe-identity-links > a.eva-acceso-destacado > span {
+  display:inline;
+  font:inherit;
+  color:inherit;
+  line-height:inherit;
+}
+@media(max-width:720px){
+  .crebe-identity .crebe-identity-links {justify-content:flex-start;}
+  .crebe-identity .crebe-identity-links > a.eva-acceso-destacado {padding:10px 13px;font-size:.875rem;}
+}
+@media(prefers-reduced-motion:reduce){
+  .crebe-identity .crebe-identity-links > a.eva-acceso-destacado {transition:none;}
+  .crebe-identity .crebe-identity-links > a.eva-acceso-destacado:hover {transform:none;}
+}
